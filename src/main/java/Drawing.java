@@ -6,8 +6,10 @@ import java.awt.event.WindowEvent;
 
 public class Drawing extends Canvas {
     Point p=new Point(200,200);
+    Point p2 = new Point(50,50);
     Color c=new Color(0x992266);// The RGB number comprises three bytes: red, green and blue
     Circle cir = new Circle(p,c,100);
+    Rect rectan = new Rect(p2, c, 200,100);
     private Frame f;
 
     //constructor
@@ -29,6 +31,7 @@ public class Drawing extends Canvas {
 
     public void paint(Graphics g) {
         cir.draw(g);
+        rectan.draw(g);
     }
 
 }
