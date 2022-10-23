@@ -36,6 +36,8 @@ public class Drawing extends Canvas {
         f.setVisible(true);
     }
 
+
+
     private void setupCanvas() {
         setBackground(Color.WHITE);
         setSize(400, 400);
